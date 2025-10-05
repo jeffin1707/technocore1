@@ -1,0 +1,36 @@
+<header>
+  <h1>Recent Records of the Asteroids</h1>
+  <a href="index.html" class="back-btn">⬅ Back to Home</a>
+</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Asteroid Tracker</title>
+<link rel="stylesheet" href="recent.css">
+</head>
+<body>
+  <header>
+    <h1>Asteroid Tracker</h1>
+    <p>Real-time Near-Earth Object Positions</p>
+  </header>
+
+  <main>
+    <section id="asteroid-dashboard">
+      <h2>Incoming Asteroids</h2>
+      <div id="asteroid-cards"></div>
+    </section>
+
+    <section id="asteroid-visual">
+      <canvas id="asteroid-radar" width="600" height="600"></canvas>
+    </section>
+  </main>
+
+  <footer>
+    <p>Powered by NASA NEO API</p>
+  </footer>
+
+<script src="recent.js"></script>
+</body>
+</html>

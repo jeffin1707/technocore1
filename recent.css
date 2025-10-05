@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background: radial-gradient(#000, #0d0d0d);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  box-shadow: 0 0 20px #0ff;
+}
+
+#asteroid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.asteroid-card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #0ff;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.asteroid-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #0ff;
+}
+
+#asteroid-visual {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+canvas {
+  background: rgba(10, 10, 30, 0.9);
+  border-radius: 50%;
+  box-shadow: 0 0 20px #0ff;
+}

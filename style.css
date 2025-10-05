@@ -1,0 +1,134 @@
+#home-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+.column {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #0ff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  padding: 1rem;
+  box-shadow: 0 0 25px #0ff;
+}
+
+.column:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px #00ffff;
+}
+
+.back-btn {
+  color: #0ff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(0, 255, 255, 0.1);
+  padding: 8px 12px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.back-btn:hover {
+  background: rgba(0, 255, 255, 0.3);
+}
+
+#home-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 3rem;
+  text-align: center;
+}
+
+.column {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #0ff;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  padding: 1rem;
+  box-shadow: 0 0 25px #0ff;
+}
+
+.column:hover {
+  transform: scale(1.07);
+  box-shadow: 0 0 40px #00ffff;
+}
+#causes-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+#cause-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+#orbitCanvas {
+  background: radial-gradient(circle at center, #000, #0d0d2d);
+  border-radius: 20px;
+  box-shadow: 0 0 25px #0ff;
+}
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+#impact-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 0 2rem;
+}
+
+.impact-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #0ff;
+  border-radius: 15px;
+  padding: 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.impact-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ff4500;
+}
+.cause-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid #0ff;
+  border-radius: 15px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.cause-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #00ffff;
+}
+
+.cause-icon {
+  font-size: 2rem;
+  animation: float 2s infinite alternate ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-10px); }
+}
